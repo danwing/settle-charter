@@ -40,5 +40,6 @@ issues
 * develop operational guidance for deployment of a system that meets the working group's primary goal.
 
 
+# Coordination
 
-
+The working group will coordinate with W3C and GSMA as necessary.
