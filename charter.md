@@ -31,7 +31,7 @@ the SETTLE WG will actively seek for review by relevant WGs if specific protocol
 profiling is needed to meet the WG's primary goal.
 
 In order to increase deployability for key services within local networks, the SETTLE WG
-might consider assessing the applicability of the guidance for few services (e.g., DNS).
+might consider assessing the applicability of the guidance for a few services (e.g., DNS).
 
 # Program of Work
 
@@ -57,3 +57,7 @@ issues.
 06/26: Submit "SETTLE Applicability to Encrypted DNS" to the IESG for publication
 
 08/26: Close or recharter the WG
+
+# Coordination
+
+The working group will coordinate with W3C and GSMA as necessary.
