@@ -1,44 +1,62 @@
-# Charter for Working Group
+# Charter for SEcure access To Tls Local rEsources (SETTLE) Working Group
 
 # Background
 
 Servers on local networks have historically settled for unencrypted
 communications -- printers, routers, network attached storage (NAS).
-However, with the advent of HTTPS everywhere {{everywhere}}, browsers
+However, with the advent of HTTPS everywhere, browsers
 disadvantage unencrypted communications by requiring a secure context
 (generally HTTPS) for features such as Service Workers, Web Bluetooth,
-WebCrypto, WebTransport, and more.  This increases the importance of a
+WebCrypto, WebTransport, and more. This increases the importance of a
 secure context to local domains.
 
-Today, a secure context is obtained with a PKIX certificate ({{?RFC5280}})
+Today, a secure context is obtained with a PKIX certificate
 signed by a Certification Authority (CA) that is trusted by the client.
 
 However, servers on a local network cannot easily get PKIX
-certificates signed by a Certification Authority because: they are not
-directly reachable from the outside (due to firewall or NAPT), lack of
-domain name delegation, and ongoing certificate renewal.
+certificates signed by a CA because: they are not
+directly reachable from the outside (due to firewall or Network Address
+Port Translation (NAPT)), lack of domain name delegation, and ongoing
+certificate renewal.
 
 # Goals
 
-Primary goal is to provide implementation guidance to browsers to obtain a secure context
-with servers operating within a local network.
+A primary goal of SETTLE WG is to provide implementation and operational
+guidance to obtain a secure context with servers operating within a local
+network.
 
-If the primary goal can only be acheived through protocol extensions
-or modifications, this working group will coordinate with other IETF
-working groups for those protocol changes.
+If the primary goal can only be achieved through protocol extensions or modifications,
+the SETTLE WG will coordinate with relevant IETF WGs for those protocol changes. Likewise,
+the SETTLE WG will actively seek for review by relevant WGs if specific protocol
+profiling is needed to meet the WG's primary goal.
 
+In order to increase deployability for key services within local networks, the SETTLE WG
+might consider assessing the applicability of the guidance for a few services (e.g., DNS).
 
 # Program of Work
 
-The working group is expected to:
+The SETTLE WG is expected to:
 
-* develop a document describing the problem, prior attempts to solve the problem, and deployment
-issues
+* Develop a document describing the problem, prior attempts to solve the problem, and deployment
+issues.
 
-* develop a requirements document that balances existing browser behavior with the working group's primary goal.
+* Develop a requirements document that balances existing browsers behavior with the WG's primary goal.
 
-* develop operational guidance for deployment of a system that meets the working group's primary goal.
+* Develop operational guidance for deployment of a system that meets the WG's primary goal.
 
+* Develop applicability of the operational guidance to key applications (e.g., Encrypted DNS forwarders in local networks).
+
+# Milestones
+
+09/25: Submit "SETTLE Problem Space and Deployment Issues" to the IESG for publication
+
+12/25: Submit "SETTLE Requirements" to the IESG for publication
+
+04/25: Submit "SETTLE Operational Guidance" to the IESG for publication
+
+06/26: Submit "SETTLE Applicability to Encrypted DNS" to the IESG for publication
+
+08/26: Close or recharter the WG
 
 # Coordination
 
