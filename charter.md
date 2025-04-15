@@ -46,7 +46,13 @@ issues.
 
 * Develop applicability of the operational guidance to key applications (e.g., Encrypted DNS forwarders in local networks).
 
+# Coordination
+
+The working group will coordinate as necessary with W3C and GSMA, among others.
+
 # Milestones
+
+07/25: Send Liaisons to a set of identified organizations about SETTLE
 
 09/25: Submit "SETTLE Problem Space and Deployment Issues" to the IESG for publication
 
@@ -57,7 +63,3 @@ issues.
 06/26: Submit "SETTLE Applicability to Encrypted DNS" to the IESG for publication
 
 08/26: Close or recharter the WG
-
-# Coordination
-
-The working group will coordinate with W3C and GSMA as necessary.
