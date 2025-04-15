@@ -12,7 +12,7 @@ context to local domains. Local services such as file sharing and
 printing also benefit from encrypted communications for integrity and
 privacy.
 
-Today, a secure communication channel is obtained over TLS with a PKIX
+Today, a secure communication channel is established using TLS with a PKIX
 certificate signed by a Certification Authority (CA) that is trusted
 by the client.
 
