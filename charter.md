@@ -4,14 +4,17 @@
 
 Servers on local networks have historically settled for unencrypted
 communications -- printers, routers, network attached storage (NAS).
-However, with the advent of HTTPS everywhere, browsers
-disadvantage unencrypted communications by requiring a secure context
-(generally HTTPS) for features such as Service Workers, Web Bluetooth,
-WebCrypto, WebTransport, and more. This increases the importance of a
-secure context to local domains.
+However, with the advent of HTTPS everywhere, browsers disadvantage
+unencrypted communications by requiring a secure context (generally
+HTTPS) for features such as Service Workers, Web Bluetooth, WebCrypto,
+WebTransport, and more. This increases the importance of a secure
+context to local domains. Local services such as file sharing and
+printing also benefit from encrypted communications for integrity and
+privacy.
 
-Today, a secure context is obtained with a PKIX certificate
-signed by a Certification Authority (CA) that is trusted by the client.
+Today, a secure communication channel is established using TLS with a PKIX
+certificate signed by a Certification Authority (CA) that is trusted
+by the client.
 
 However, servers on a local network cannot easily get PKIX
 certificates signed by a CA because: they are not
