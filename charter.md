@@ -22,6 +22,10 @@ directly reachable from the outside (due to firewall or Network Address
 Port Translation (NAPT)), lack of domain name delegation, and ongoing
 certificate renewal.
 
+While some systems use cloud rendezvous (e.g., cloud printing, most
+IoT systems), direct connection to the local network server has
+better fate sharing, availability, privacy, bandwidth, and latency.
+
 # Goals
 
 A primary goal of SETTLE WG is to provide implementation and operational
