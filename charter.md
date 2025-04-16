@@ -3,13 +3,13 @@
 # Background
 
 Servers on local networks have historically settled for unencrypted
-communications -- printers, routers, network attached storage (NAS).
+communications -- printers, routers, and SMB file sharing.
 However, with the advent of HTTPS everywhere, browsers disadvantage
 unencrypted communications by requiring a secure context (generally
 HTTPS) for features such as Service Workers, Web Bluetooth, WebCrypto,
 WebTransport, and more. This increases the importance of a secure
-context to local domains. Local services such as file sharing and
-printing also benefit from encrypted communications for integrity and
+context to local domains. Other local services such as SMB file sharing and
+printing would also benefit from encrypted communications for integrity and
 privacy.
 
 Today, a secure communication channel is established using TLS with a PKIX
