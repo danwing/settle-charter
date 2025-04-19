@@ -34,7 +34,7 @@ the SETTLE WG will actively seek for review by relevant WGs if specific protocol
 profiling is needed to meet the WG's primary goal.
 
 In order to increase deployability for key services within local networks, the SETTLE WG
-might consider assessing the applicability of the guidance for a few services (e.g., DNS).
+might consider assessing the applicability of the guidance for a few services.
 
 # Program of Work
 
@@ -47,11 +47,11 @@ issues.
 
 * Develop operational guidance for deployment of a system that meets the WG's primary goal.
 
-* Develop applicability of the operational guidance to key applications (e.g., Encrypted DNS forwarders in local networks).
+* Develop applicability of the operational guidance to key applications that might be selected by the WG.
 
 # Coordination
 
-The working group will coordinate as necessary with W3C and GSMA, among others.
+The working group will coordinate as necessary with W3C, GSMA, CSA, among others.
 
 # Milestones
 
@@ -63,6 +63,6 @@ The working group will coordinate as necessary with W3C and GSMA, among others.
 
 04/25: Submit "SETTLE Operational Guidance" to the IESG for publication
 
-06/26: Submit "SETTLE Applicability to Encrypted DNS" to the IESG for publication
+06/26: Submit "SETTLE Applicability Document" to the IESG for publication
 
 08/26: Close or recharter the WG
