@@ -32,7 +32,12 @@ how a CSR can be moved from a device to the local CA, get signed, and
 moved back to the device. Repeating this effort across several devices
 with different user interfaces and CSR capabilities and repeating it
 again every quarter or year (to rotate keys) is not tenable for most
-users.
+users. The user experience to add a locally-installed Certificate
+Authority on a client device also differs by web browser and operating
+system.  Further, adding a Certificate Authority enables interception
+of TLS-encrypted data which makes such a solution untenable when
+visiting a less-trusted network (e.g., hotel, library) even if there
+are useful local hosts (e.g., printer).
 
 # Goals
 
