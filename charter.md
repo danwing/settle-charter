@@ -13,14 +13,16 @@ printing would also benefit from encrypted communications for integrity and
 privacy.
 
 Today, a secure communication channel is established using TLS with a PKIX
-certificate signed by a Certification Authority (CA) that is trusted
+certificate signed by a public Certification Authority (CA) that is trusted
 by the client.
 
 However, servers on a local network cannot easily get PKIX
-certificates signed by a CA because: they are not
-directly reachable from the outside (due to firewall or Network Address
-Port Translation (NAPT)), lack of domain name delegation, and ongoing
-certificate renewal.
+certificates signed by a public CA because:
+
+  * they are not directly reachable from the outside (due to firewall or Network Address
+Port Translation (NAPT))
+  * lack of domain name delegation, and
+  * ongoing certificate renewal.
 
 # Goals
 
