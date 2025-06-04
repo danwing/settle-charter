@@ -22,6 +22,18 @@ directly reachable from the outside (due to firewall or Network Address
 Port Translation (NAPT)), lack of domain name delegation, and ongoing
 certificate renewal.
 
+
+A locally-installed certificate authority (also called "private CA",
+"enterprise CA") is the standard solution to this problem. However, a
+locally-installed CA is complicated for end users because users are
+unfamiliar with Certificate Signing Requests, some devices do not
+generate Certificate Signing Requests, and users are unfamiliar with
+how a CSR can be moved from a device to the local CA, get signed, and
+moved back to the device. Repeating this effort across several devices
+with different user interfaces and CSR capabilities and repeating it
+again every quarter or year (to rotate keys) is not tenable for most
+users.
+
 # Goals
 
 A primary goal of SETTLE WG is to provide implementation and operational
