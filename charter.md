@@ -24,6 +24,14 @@ Port Translation (NAPT))
   * lack of domain name delegation, and
   * ongoing certificate renewal.
 
+Due to those challenges, if a local server does have have a
+certificate it won't have a public DNS name or have a certificate
+signed by a public CA.  When connecting, the user will receive a
+certificate warning -- sometimes each time the user connects to the
+server.  Over time, the user disregards such warnings even when an
+attacker has compromised the path or the server, as the client cannot
+confidently distinguish an attack.  This is undesirable.
+
 # Goals
 
 A primary goal of SETTLE WG is to provide implementation and operational
