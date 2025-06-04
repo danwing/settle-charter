@@ -24,7 +24,7 @@ certificate renewal.
 
 
 An alternative to a public CA is a locally-installed certificate
-authority (also called "private CA", "enterprise CA").  However, a
+authority (also called "private CA" or "enterprise CA").  However, a
 locally-installed CA remains complicated for end users because users
 are unfamiliar with Certificate Signing Requests, some devices do not
 generate Certificate Signing Requests, and users are unfamiliar with
