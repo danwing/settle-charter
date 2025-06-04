@@ -8,9 +8,9 @@ However, with the advent of HTTPS everywhere, browsers disadvantage
 unencrypted communications by requiring a secure context (generally
 HTTPS) for features such as Service Workers, Web Bluetooth, WebCrypto,
 WebTransport, and more. This increases the importance of a secure
-context to local domains. Other local services such as SMB file sharing and
-printing would also benefit from encrypted communications for integrity and
-privacy.
+context to local domains. Non-HTTP protocols such as SMB3 encrypted
+file sharing would benefit from stronger server authentication and
+printing (IPP over HTTPS) would benefit from encrypted communications.
 
 Today, a secure communication channel is established using TLS with a PKIX
 certificate signed by a public Certification Authority (CA) that is trusted
