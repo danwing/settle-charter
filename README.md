@@ -1,1 +1,1 @@
-# settle-charter
+charter.md
