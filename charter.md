@@ -22,11 +22,11 @@ by the client, either a public CA or locally-installed CA.
 A certificate signed by a public CA requires no changes on clients, as
 this is how clients expect to authenticate servers.
 
-However, Servers on a local network cannot easily get PKIX
+However, servers on a local network cannot easily get PKIX
 certificates signed by a public CA because:
 
   * they are not directly reachable from the outside (due to firewall or Network Address
-    Port Translation (NAPT))
+    Port Translation (NAPT)),
   * lack of domain name delegation, and
   * ongoing certificate renewal.
 
@@ -40,25 +40,25 @@ confidently distinguish an attack.  This is undesirable.
 
 ## Locally-Installed Certificate Authority
 
-An alternative to a public CA is a locally-installed certificate
-authority (also called "private CA" or "enterprise CA").  However, a
-locally-installed CA remains complicated for end users because users
-are unfamiliar with Certificate Signing Requests, some devices do not
-generate Certificate Signing Requests, and users are unfamiliar with
-how a CSR can be moved from a device to the local CA, get signed, and
+An alternative to a public CA is a locally-installed CA (also called
+"private CA" or "enterprise CA").  However, a locally-installed CA
+remains complicated for end users because (1) users are unfamiliar
+with Certificate Signing Requests (CSRs), (2) some devices do not
+generate CSRs, and (3) users are unfamiliar with how a CSR can 
+be moved from a device to the local CA, get signed, and
 moved back to the device. Repeating this effort across several devices
 with different user interfaces and CSR capabilities and repeating it
 again every quarter or year (to rotate keys) is not tenable for most
-users. The user experience to add a locally-installed Certificate
-Authority on a client device also differs by web browser and operating
-system.  Further, adding a Certificate Authority enables interception
-of TLS-encrypted data which makes such a solution untenable when
-visiting a less-trusted network (e.g., hotel, library) even if there
-are useful local hosts (e.g., printer).
+users. The user experience to add a locally-installed CA
+on a client device also differs by web browser and operating
+system.  Further, adding a CA enables interception of TLS-encrypted
+data which makes such a solution untenable when visiting
+a less-trusted network (e.g., hotel or library) even if there
+are useful local hosts (e.g., printers).
 
 # Goals
 
-A primary goal of SETTLE WG is to provide implementation and operational
+A primary goal of the SETTLE WG is to provide implementation and operational
 guidance to obtain a secure context with servers operating within a local
 network.
 
@@ -85,15 +85,15 @@ issues.
 
 # Coordination
 
-The working group will coordinate as necessary with W3C, GSMA, CSA, CA/Browser Forum among others.
+The working group will coordinate as necessary with W3C, GSMA, CSA, CA/Browser Forum, among others.
 
 # Milestones
 
-07/25: Send Liaisons to a set of identified organizations about SETTLE
+09/25: Send Liaisons to a set of identified organizations about SETTLE
 
-09/25: Submit "SETTLE Problem Space and Deployment Issues" to the IESG for publication
+12/25: Submit "SETTLE Problem Space and Deployment Issues" to the IESG for publication
 
-12/25: Submit "SETTLE Requirements" to the IESG for publication
+02/25: Submit "SETTLE Requirements" to the IESG for publication
 
 04/25: Submit "SETTLE Operational Guidance" to the IESG for publication
 
