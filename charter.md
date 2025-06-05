@@ -14,9 +14,15 @@ printing (IPP over HTTPS) would benefit from encrypted communications.
 
 Today, a secure communication channel is established using TLS with a PKIX
 certificate signed by a public Certification Authority (CA) that is trusted
-by the client.
+by the client, either a public CA or locally-installed CA.
 
-However, servers on a local network cannot easily get PKIX
+
+## Public Certificate Authority
+
+A certificate signed by a public CA requires no changes on clients, as
+this is how clients expect to authenticate servers.
+
+However, Servers on a local network cannot easily get PKIX
 certificates signed by a public CA because:
 
   * they are not directly reachable from the outside (due to firewall or Network Address
@@ -32,6 +38,7 @@ server.  Over time, the user disregards such warnings even when an
 attacker has compromised the path or the server, as the client cannot
 confidently distinguish an attack.  This is undesirable.
 
+## Locally-Installed Certificate Authority
 
 An alternative to a public CA is a locally-installed certificate
 authority (also called "private CA" or "enterprise CA").  However, a
