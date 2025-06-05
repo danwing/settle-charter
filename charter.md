@@ -5,8 +5,8 @@
 Servers on local networks have historically settled for unencrypted
 communications -- printers, routers, and SMB file sharing.
 However, with the advent of HTTPS everywhere, browsers disadvantage
-unencrypted communications by requiring a secure context (generally
-HTTPS) for features such as Service Workers, Web Bluetooth, WebCrypto,
+unencrypted communications by requiring a [secure context](https://www.w3.org/TR/secure-contexts)
+for features such as Service Workers, Web Bluetooth, WebCrypto,
 WebTransport, and more. This increases the importance of a secure
 context to local domains. Non-HTTP protocols such as SMB3 encrypted
 file sharing would benefit from stronger server authentication and
