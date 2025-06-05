@@ -65,7 +65,7 @@ might consider assessing the applicability of the guidance for a few services.
 
 # Out of Scope
 
-* SSH (handled by SSHM working group)
+* SSH, which is primarily used by technical users
 
 # Program of Work
 
