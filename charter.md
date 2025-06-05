@@ -63,6 +63,10 @@ profiling is needed to meet the WG's primary goal.
 In order to increase deployability for key services within local networks, the SETTLE WG
 might consider assessing the applicability of the guidance for a few services.
 
+# Out of Scope
+
+* SSH, which is primarily used by technical users
+
 # Program of Work
 
 The SETTLE WG is expected to:
