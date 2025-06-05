@@ -2,8 +2,8 @@
 
 # Background
 
-Servers on local networks have historically settled for unencrypted
-communications -- printers, routers, and SMB file sharing.
+Unencrypted communications have been historically designed for Servers
+on local networks such as printers, routers, and SMB file sharing Servers.
 However, with the advent of HTTPS everywhere, browsers disadvantage
 unencrypted communications by requiring a secure context (generally
 HTTPS) for features such as Service Workers, Web Bluetooth, WebCrypto,
@@ -20,7 +20,7 @@ However, servers on a local network cannot easily get PKIX
 certificates signed by a public CA because:
 
   * they are not directly reachable from the outside (due to firewall or Network Address
-Port Translation (NAPT))
+    Port Translation (NAPT))
   * lack of domain name delegation, and
   * ongoing certificate renewal.
 
@@ -63,10 +63,6 @@ profiling is needed to meet the WG's primary goal.
 In order to increase deployability for key services within local networks, the SETTLE WG
 might consider assessing the applicability of the guidance for a few services.
 
-# Out of Scope
-
-* SSH, which is primarily used by technical users
-
 # Program of Work
 
 The SETTLE WG is expected to:
@@ -82,7 +78,7 @@ issues.
 
 # Coordination
 
-The working group will coordinate as necessary with W3C, GSMA, CSA, among others.
+The working group will coordinate as necessary with W3C, GSMA, CSA, CA/Browser Forum among others.
 
 # Milestones
 
