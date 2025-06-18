@@ -62,10 +62,10 @@ A primary goal of the SETTLE WG is to provide implementation and operational
 guidance to obtain a secure context with servers operating within a local
 network.
 
-If the primary goal can only be achieved through protocol extensions or modifications,
-the SETTLE WG will coordinate with relevant IETF WGs for those protocol changes. Likewise,
-the SETTLE WG will actively seek for review by relevant WGs if specific protocol
-profiling is needed to meet the WG's primary goal.
+Protocol changes or extensions remain the responsibility of their relevant
+IETF WGs.  Likewise, the SETTLE WG will actively seek for review by
+relevant WGs if specific protocol profiling is needed to meet the WG's
+primary goal.
 
 In order to increase deployability for key services within local networks, the SETTLE WG
 might consider assessing the applicability of the guidance for a few services.
