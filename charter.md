@@ -73,7 +73,7 @@ primary goal.
 In order to increase deployability for key services within local networks, the SETTLE WG
 might consider assessing the applicability of the guidance for a few services.
 
-As existing client software handles identities using hostnames, Settle
+As existing client software handles identities using hostnames, the SETTLE WG
 should concentrate on unique hostnames.
 
 # Program of Work
