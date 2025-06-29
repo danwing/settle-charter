@@ -13,8 +13,8 @@ file sharing would benefit from stronger server authentication and
 printing (IPP over HTTPS) would benefit from encrypted communications.
 
 Today, a secure communication channel is established using TLS with a PKIX
-certificate signed by a public Certification Authority (CA) that is trusted
-by the client, either a public CA or locally-installed CA.
+certificate signed by a Certification Authority (CA) that is trusted
+by the client, either a public CA or a locally-installed CA.
 
 
 ## Public Certificate Authority
@@ -30,7 +30,7 @@ certificates signed by a public CA because:
   * lack of domain name delegation, and
   * ongoing certificate renewal.
 
-Due to those challenges, if a local server does have have a
+Due to those challenges, if a local server does have a
 certificate it won't have a public DNS name or have a certificate
 signed by a public CA.  When connecting, the user will receive a
 certificate warning -- sometimes each time the user connects to the
@@ -51,10 +51,13 @@ with different user interfaces and CSR capabilities and repeating it
 again every quarter or year (to rotate keys) is not tenable for most
 users. The user experience to add a locally-installed CA
 on a client device also differs by web browser and operating
-system.  Further, adding a CA enables interception of TLS-encrypted
-data which makes such a solution untenable when visiting
-a less-trusted network (e.g., hotel or library) even if there
-are useful local hosts (e.g., printers).
+system.  Further, adding a CA
+enables interception of TLS-encrypted data because any certificate it
+issues will be trusted by the client for all secure connections, not
+just those to the intended local servers. This broad trust scope makes
+such a solution unsafe when visiting a less-trusted network (e.g., a
+hotel or library), even if there are useful local hosts (e.g.,
+printers).
 
 # Goals
 
@@ -69,6 +72,9 @@ primary goal.
 
 In order to increase deployability for key services within local networks, the SETTLE WG
 might consider assessing the applicability of the guidance for a few services.
+
+As existing client software handles identities using hostnames, the SETTLE WG
+should concentrate on unique hostnames.
 
 # Program of Work
 
